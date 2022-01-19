@@ -81,8 +81,8 @@ class Comment(db.Model, Base):
 
 
 # Only run for creating database table
-# db.create_all()
-# db.session.commit()
+db.create_all()
+db.session.commit()
 
 
 def admin_only(f):
